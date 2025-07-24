@@ -365,3 +365,88 @@
         height: 200px;
     }
 }
+
+
+.flower-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #f5f6fa;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.flower-image-wrapper {
+    position: relative;
+}
+
+.flower-img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 90px;
+}
+
+.flower-content {
+    max-width: 500px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.flower-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.flower-content ul {
+    padding-left: 20px;
+}
+
+.flower-content li {
+    margin-bottom: 12px;
+    color: #444;
+    line-height: 1.6;
+}
+.flower-content li{
+    color:  #6E6E73;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .flower-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .flower-content {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .flower-content h2 {
+        font-size: 24px;
+    }
+
+    .flower-img {
+        width: 100%;
+        max-width: 90vw;
+    }
+
+    /* Hide badge on mobile */
+    .badge {
+        display: none;
+    }
+}
+
+
